@@ -7,4 +7,4 @@ Template repository with a docker setup for running [diagrams as code](https://d
 1. Create a folder and create your code inside it: Ex:
 `mkdir diagrams && touch example.py`
 
-2. Run: docker run -v diagrams:/diagrams joaovfsousa/create-diagram example.py
+2. Run: docker run -rm -v diagrams:/diagrams joaovfsousa/create-diagram example.py
