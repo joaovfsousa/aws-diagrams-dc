@@ -2,7 +2,9 @@ FROM python:3.10.5-alpine
 
 WORKDIR /diagrams
 
-RUN apk add --no-cache graphviz
+RUN apk add --update --no-cache \
+  graphviz \
+  ttf-freefont
 
 RUN rm -rf /var/cache/apk/*
 
